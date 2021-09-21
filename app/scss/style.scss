@@ -1,0 +1,51 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__inner {
+        background-image: url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 20px 6px 24px;
+        display: flex;
+        height: 812px;
+        width: 375px;
+        flex-direction: column;
+        margin: 20px 0;
+        // justify-content: space-between;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 153px;
+    }
+
+    &__restore {
+        font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 13px;
+        line-height: 41px;
+        letter-spacing: -0.216667px;
+
+    }
+
+    &__unlimite {
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+}
