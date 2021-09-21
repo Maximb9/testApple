@@ -14,7 +14,7 @@
         background-image: url('../images/bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 40px 20px 6px 24px;
+        // padding: 40px 20px 6px 20px;
         display: flex;
         height: 812px;
         width: 375px;
@@ -28,6 +28,7 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 153px;
+        padding: 40px 20px 0 20px;
     }
 
     &__restore {
@@ -46,6 +47,92 @@
         text-align: center;
         color: #FFFFFF;
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 29px;
+    }
 
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 66px;
+        margin-bottom: 44px;
+    }
+
+    &__menu-list {
+        display: flex;
+    }
+
+    &__menu-imgdoc {
+        margin-right: 7px;
+    }
+
+    &__menu-imgexp {
+        margin-right: 12px;
+    }
+
+    &__menu-imgtext {
+        margin-right: 10px;
+    }
+
+    &__menu-title {
+        font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 17px;
+        line-height: 30px;
+        letter-spacing: -0.321111px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card-month {
+        background: linear-gradient(0deg, rgba(73, 87, 149, 0.197154), rgba(73, 87, 149, 0.197154));
+        border: 1px solid #495795;
+        border-radius: 21px;
+        height: 178px;
+        width: 144px;
+        margin-right: 15px;
+        text-align: center;
+
+    }
+
+    &__card-year {
+        // background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        // mix-blend-mode: normal;
+        // opacity: 0.25;
+        border-radius: 19px;
+        width: 131px;
+        height: 162px;
+        text-align: center;
+    }
+
+    &__card-title {
+        margin-top: 25px;
+        margin-bottom: 11px;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 19px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__card-price {
+        margin-top: 25px;
+        margin-bottom: 11px;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 24px;
+        line-height: 15px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    &__card-per {
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 24px;
+        line-height: 15px;
+        color: #FFFFFF;
     }
 }
