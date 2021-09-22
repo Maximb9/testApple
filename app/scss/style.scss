@@ -24,7 +24,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 153px;
+        margin-bottom: 138px;
         padding: 40px 20px 0 20px;
     }
 
@@ -99,11 +99,56 @@
     }
 
     &__card-year {
-        border-radius: 19px;
-        width: 131px;
-        height: 162px;
+        background: linear-gradient(0deg, rgba(73, 87, 149, 0.197154), rgba(73, 87, 149, 0.197154));
+        border: 1px solid #495795;
+        border-radius: 21px;
+        height: 178px;
+        width: 144px;
         text-align: center;
+        position: relative;
+        // border-top-right-radius: 0;
+
+        &::after {
+            content: "";
+            display: block;
+            background: transparent;
+            border: 1px solid #495795;
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50px;
+            border-right: 1px solid transparent;
+            border-bottom: -1px solid transparent;
+            border-top: 1px solid transparent;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            width: 38px;
+            height: 38px;
+            background-color: #DB0000;
+            border-radius: 50%;
+            border: none;
+            top: -4px;
+            right: -4px;
+        }
     }
+
+    // &__card-yearwrapper {
+    //     width: 50px;
+    //     height: 50px;
+    //     border: 1px solid #495795;
+    //     // border-top-color: rgba(255, 255, 255, 2);
+    //     // border-right-color: rgba(255, 255, 255, 2);
+    //     position: absolute;
+    //     top: -1px;
+    //     right: -1px;
+    //     border-bottom-left-radius: 49%;
+    // }
 
     &__card-title {
         margin-top: 25px;
@@ -158,8 +203,8 @@
         color: #FFFFFF;
     }
 
-    &__btn {
-        // padding: 0 47px 0 48px;
+    &__but-link {
+        padding: 0 47px 0 48px;
     }
 
     &__button {
@@ -170,7 +215,49 @@
         line-height: 17px;
         text-align: center;
         color: #FFFFFF;
+        font-weight: bold;
         padding: 19px 105px 18px 105px;
         border: none;
+        cursor: pointer;
+        margin-bottom: 16px;
+    }
+
+    &__auto {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-bottom: 16px;
+    }
+
+    &__privacy {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px 0 27px;
+    }
+
+    &__privacy-link {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 9px;
+        border-bottom: 1px solid #BDC0D0;
+        color: #BDC0D0;
+        margin-bottom: 27px;
+    }
+
+    &__line {
+        width: 134px;
+        height: 5px;
+        background: #FFFFFF;
+        border-radius: 100px;
+        margin: 0 auto;
+        margin-bottom: 6px;
     }
 }
