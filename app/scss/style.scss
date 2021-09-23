@@ -87,6 +87,24 @@
         margin-bottom: 16px;
     }
 
+    &__card-image {
+        bottom: -3px;
+        right: 0;
+        position: absolute;
+        z-index: 20;
+        height: 21px;
+        width: 21px;
+    }
+
+    &__card-imagetwo {
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        height: 21px;
+        width: 21px;
+        z-index: 25;
+    }
+
     &__card-month {
         background: linear-gradient(0deg, rgba(73, 87, 149, 0.197154), rgba(73, 87, 149, 0.197154));
         border: 1px solid #495795;
@@ -95,7 +113,7 @@
         width: 144px;
         margin-right: 15px;
         text-align: center;
-
+        // display: none;
     }
 
     &__card-year {
@@ -108,6 +126,7 @@
         position: relative;
         border-right: none;
         border-top: none;
+        // display: none;
 
         &::after {
             content: "";
@@ -128,7 +147,7 @@
         &::before {
             content: '';
             position: absolute;
-            z-index: 10;
+            z-index: 1;
             width: 38px;
             height: 38px;
             background-color: #DB0000;
@@ -162,7 +181,8 @@
 
 
 
-    &__card-title {
+    &__card-title,
+    &__card-yeartitle {
         margin-top: 25px;
         margin-bottom: 11px;
         font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -172,7 +192,8 @@
         color: #FFFFFF;
     }
 
-    &__card-price {
+    &__card-price,
+    &__card-yearprice {
         margin-top: 25px;
         margin-bottom: 11px;
         font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -202,11 +223,27 @@
         background-color: #495795;
         width: 151px;
         height: 21px;
-        left: 39px;
+        left: 32px;
         top: 120px;
     }
 
-    &__card-money {
+    &__card-yearday {
+        position: absolute;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        background-color: #495795;
+        width: 151px;
+        height: 21px;
+        left: -4px;
+        top: 120px;
+    }
+
+    &__card-money,
+    &__card-yearmoney {
         margin-top: 43px;
         font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         font-size: 13px;
@@ -272,4 +309,52 @@
         margin: 0 auto;
         margin-bottom: 6px;
     }
+
+    &__card-yearcircle {
+        position: absolute;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+        top: 8px;
+        left: 112px;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        font-weight: 700;
+    }
+
+    &__card-month--active {
+        width: 131px;
+        height: 162px;
+        opacity: 0.4;
+    }
+
+    &__card-title--active {
+        margin-top: 23px;
+        margin-bottom: 18px;
+    }
+
+    &__card-price--active {
+        font-size: 22px;
+        line-height: 15px;
+    }
+
+    &__card-per--active {
+        margin-bottom: 9px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &__card-day--active {
+        font-size: 14px;
+        line-height: 16px;
+        width: 137px;
+        height: 20px;
+        left: 39px;
+        top: 117px;
+        margin-bottom: 10px;
+    }
+
+
 }
