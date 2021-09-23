@@ -106,7 +106,8 @@
         width: 144px;
         text-align: center;
         position: relative;
-        // border-top-right-radius: 0;
+        border-right: none;
+        border-top: none;
 
         &::after {
             content: "";
@@ -114,8 +115,8 @@
             background: transparent;
             border: 1px solid #495795;
             position: absolute;
-            top: -7px;
-            right: -7px;
+            top: -6px;
+            right: -6px;
             width: 44px;
             height: 44px;
             border-radius: 50px;
@@ -138,17 +139,28 @@
         }
     }
 
-    // &__card-yearwrapper {
-    //     width: 50px;
-    //     height: 50px;
-    //     border: 1px solid #495795;
-    //     // border-top-color: rgba(255, 255, 255, 2);
-    //     // border-right-color: rgba(255, 255, 255, 2);
-    //     position: absolute;
-    //     top: -1px;
-    //     right: -1px;
-    //     border-bottom-left-radius: 49%;
-    // }
+    &__card-yearlinetop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 15px;
+        height: 1px;
+        width: 97px;
+        background-color: #495795;
+    }
+
+    &__card-yearlineright {
+        position: absolute;
+        top: 31px;
+        right: 0px;
+        height: 130px;
+        width: 1px;
+        background-color: #495795;
+        border-bottom-right-radius: 50%;
+    }
+
+
+
 
     &__card-title {
         margin-top: 25px;
