@@ -227,9 +227,10 @@
     }
 
     &__card-month--active {
-        width: 131px;
-        height: 162px;
+        // width: 131px;
+        // height: 162px;
         opacity: 0.4;
+        // margin-bottom: 40px;
     }
 
     &__card-title--active {
@@ -251,11 +252,16 @@
     &__card-day--active {
         font-size: 14px;
         line-height: 16px;
-        width: 137px;
+        width: 150px;
         height: 20px;
-        left: 39px;
+        left: 30px;
         top: 117px;
         margin-bottom: 10px;
+    }
+
+    &__card-money--active {
+        font-size: 13px;
+        line-height: 15px;
     }
 
     &__card-yeartitle {
@@ -326,3 +332,40 @@ text {
     font-size: 12px;
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+
+// @media screen and (max-width: 376px),
+// screen and (max-height: 667px) {
+//     .choice {
+//         &__header {
+//             margin-bottom: 10px;
+//         }
+
+//         &__unlimite {
+//             margin-bottom: 14px;
+//         }
+
+//         &__menu {
+//             margin-bottom: 15px;
+//         }
+//     }
+
+// }
+
+
+// @media screen and (max-width: 375px),
+// screen and (max-height: 812px) {
+//     .choice {
+//         &__header {
+//             margin-bottom: 100px;
+//         }
+
+//         &__unlimite {
+//             margin-bottom: 14px;
+//         }
+
+//         &__menu {
+//             margin-bottom: 15px;
+//         }
+//     }
+
+// }
