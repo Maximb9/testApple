@@ -226,43 +226,58 @@
         margin-bottom: 6px;
     }
 
-    &__card-month--active {
-        // width: 131px;
-        // height: 162px;
-        opacity: 0.4;
-        // margin-bottom: 40px;
-    }
 
-    &__card-title--active {
-        margin-top: 23px;
-        margin-bottom: 18px;
-    }
 
-    &__card-price--active {
-        font-size: 22px;
-        line-height: 15px;
-    }
+    // &__card-title--active {
+    //     margin-top: 23px;
+    //     margin-bottom: 18px;
+    // }
 
-    &__card-per--active {
-        margin-bottom: 9px;
+    // &__card-price--active {
+    //     font-size: 22px;
+    //     line-height: 15px;
+    // }
+
+    // &__card-per--active {
+    //     margin-bottom: 9px;
+    //     font-size: 12px;
+    //     line-height: 15px;
+    // }
+
+    // &__card-day--active {
+    //     font-size: 14px;
+    //     line-height: 16px;
+    //     width: 150px;
+    //     height: 20px;
+    //     left: 30px;
+    //     top: 117px;
+    //     margin-bottom: 10px;
+    // }
+
+    // &__card-money--active {
+    //     font-size: 13px;
+    //     line-height: 15px;
+    // }
+
+    &__card-procent {
+        position: absolute;
+        background-color: #DB0000;
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius: 50%;
+        top: -4px;
+        right: 33px;
+        text-align: center;
+        padding: 12px 0;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
         font-size: 12px;
-        line-height: 15px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
     }
 
-    &__card-day--active {
-        font-size: 14px;
-        line-height: 16px;
-        width: 150px;
-        height: 20px;
-        left: 30px;
-        top: 117px;
-        margin-bottom: 10px;
-    }
-
-    &__card-money--active {
-        font-size: 13px;
-        line-height: 15px;
-    }
 
     &__card-yeartitle {
         margin-top: -23px;
@@ -333,6 +348,12 @@ text {
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+.image {
+    height: 178px;
+    width: 144px;
+    cursor: pointer;
+}
+
 // @media screen and (max-width: 376px),
 // screen and (max-height: 667px) {
 //     .choice {
@@ -369,3 +390,7 @@ text {
 //     }
 
 // }
+
+.active {
+    opacity: 0.4;
+}
